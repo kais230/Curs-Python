@@ -15,7 +15,7 @@ class LocationView(LoginRequiredMixin, ListView):
 
 class CreateLocationView(LoginRequiredMixin, CreateView):
     model = Location
-    fields = ['nume_prenume', 'profesie']
+    fields = ['city', 'country']
     template_name = 'location/location_form.html'
 
     def get_success_url(self):
@@ -24,7 +24,7 @@ class CreateLocationView(LoginRequiredMixin, CreateView):
 
 class UpdateLocationView(LoginRequiredMixin, UpdateView):
     model = Location
-    fields = ['nume_prenume', 'profesie']
+    fields = ['city', 'country']
     template_name = 'location/location_form.html'
 
     def get_success_url(self):
