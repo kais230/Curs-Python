@@ -15,8 +15,8 @@ class Migration(migrations.Migration):
             name='Location',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nume_prenume', models.CharField(max_length=100)),
-                ('profesie', models.CharField(max_length=90)),
+                ('city', models.CharField(max_length=100)),
+                ('country', models.CharField(max_length=90)),
                 ('active', models.BooleanField(default=1)),
             ],
         ),
